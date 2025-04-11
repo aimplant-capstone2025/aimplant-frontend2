@@ -13,9 +13,10 @@ export type ImplantResult = {
   position: string;
   status: 'Healthy' | 'Mucositis' | 'Peri-implantitis';
   boneLoss: {
-    sixMonths: number;
-    twoYears: number;
-    fiveYears: number;
+    // sixMonths: number;
+    // twoYears: number;
+    // fiveYears: number;
+    boneloss: number;
   };
   croppedImage: string; // URL or base64
 };
