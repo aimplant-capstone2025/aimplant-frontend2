@@ -19,9 +19,9 @@ export const predictBoneLossAPI = async (imageFile: File): Promise<{ result_img:
     // Convert FastAPI response to ImplantResult[] format
     const implants: ImplantResult[] = data.implants.map((implant: any, index: number) => ({
       id: index + 1,
-      position: `#${30 + index}`, // Placeholder positions; replace with real logic if available
-      status: 'Mucositis',
-    //   status: implant.class,      // "Peri-implantitis", etc.
+      // position: `#${30 + index}`, // Placeholder positions; replace with real logic if available
+      // status: 'Mucositis',
+      status: implant.class,      // Severity Level(1-4)
       boneLoss: {
         // sixMonths: 0,             // If you have this from backend, replace it
         // // twoYears: Math.round(implant.boneloss), // Use boneloss from backend
