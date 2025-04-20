@@ -10,8 +10,9 @@ export type PatientData = {
 
 export type ImplantResult = {
   id: number;
-  position: string;
-  status: 'Healthy' | 'Mucositis' | 'Peri-implantitis';
+  // position: string;
+  // status: 'Healthy' | 'Mucositis' | 'Peri-implantitis';
+  status: string
   boneLoss: {
     // sixMonths: number;
     // twoYears: number;
