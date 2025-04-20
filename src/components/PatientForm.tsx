@@ -109,7 +109,7 @@ const PatientForm: React.FC<PatientFormProps> = ({ onResultsReady }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <FormField
+      {/* <FormField
         id="age"
         name="age"
         label="Age"
@@ -137,7 +137,7 @@ const PatientForm: React.FC<PatientFormProps> = ({ onResultsReady }) => {
         value={patientData.location}
         onChange={handleFieldChange}
         required
-      />
+      /> */}
       
       <ImageUploader
         imagePreview={imagePreview}
