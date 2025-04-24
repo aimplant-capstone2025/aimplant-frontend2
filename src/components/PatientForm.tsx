@@ -4,7 +4,7 @@ import { PatientData, ImplantResult } from '@/app/types';
 import FormField from './FormField';
 import ImageUploader from './ImageUploader';
 import LoadingButton from './LoadingButton';
-import { predictBoneLoss } from '@/app/api/mockApi';
+// import { predictBoneLoss } from '@/app/api/mockApi';
 import { predictBoneLossAPI } from '@/app/api/testApi';
 import UploadImageNoStore from './UploadImageNoStore';
 import UploadImage from './UploadImage';
